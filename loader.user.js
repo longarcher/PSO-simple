@@ -18,7 +18,7 @@ setTimeout(
         const n = document.createElement("script");
         n.language = "JavaScript";
         n.crossorigin = "anonymous";
-        n.src = "https://github.com/longarcher/PSO-simple/main/loader.user.js";
+        n.src = "https://github.com/longarcher/PSO-simple/main/loader.user.js""";
         document.head.appendChild(n);
     },
     2000,
