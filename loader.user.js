@@ -103,10 +103,10 @@ function PSOTarget2(target){
     InventoryGet(target, "ItemMouth3").Property = {"Type": "n1h1s3", "Difficulty": 2, "Block": ["ItemMouth", "ItemMouth2"], "Effect": ["BlockMouth"],"Hide": ["Mouth"], "HideItem": ["ItemNoseNoseRing"], "AllowActivity": [], "Attribute": []};
     InventoryGet(target, "ItemHood").Property = {"Type": "m0e0p1g0s0h2j0", "Block": ["ItemNose", "ItemMouth", "ItemMouth2", "ItemMouth3", "ItemHead"],"Effect": ["BlockMouth", "BlindLight", "BlindHeavy", "Prone"] ,"Hide": ["Glasses","Blush","HairFront","HairBack","Hat","HairAccessory1","HairAccessory2","HairAccessory3","ItemMouth","ItemMouth2","ItemMouth3","ItemHead"], "HideItem": ["HatFacePaint","MaskFacePaint","ClothAccessoryFacePaint","MaskFuturisticVisor","MaskShinobiMask"]};
     InventoryGet(target, "ItemVulvaPiercings"). Property = {"Mode": "Edge", "Effect": ["Egged", "Vibrating", "Edged"], "Intensity": 0};
-    InventoryGet(target, "ItemTorso2").Property = {"OverridePriority": 24};
+    InventoryGet(target, "ItemTorso2").Property.OverridePriority = 24;
 
 
-    for(let I=0; I <= 14; I++){
+    for(let I=0; I <= 15; I++){
         InventoryLock(target, ItemGroupList[I], "MistressPadlock", Player.MemberNumber);
     }
 
@@ -175,7 +175,7 @@ function PSOTarget(target){
     InventoryGet(target, "ItemArms").Property = {"Block": ["ItemLegs", "ItemFeet", "ItemHands", "ItemHandheld" ], "Hide": [], "Type": null }
 
 
-    for(let I=0; I <= 14; I++){
+    for(let I=0; I <= 15; I++){
         InventoryLock(target, ItemGroupList[I], "MistressPadlock", Player.MemberNumber);
     }
 
